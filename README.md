@@ -1,11 +1,12 @@
-Professional README.md Generator
-Description
-This is a Node.js application that takes in user input from inquirer prompts in the command line to generate a README.md file for user's projects.
+# Professional README.md Generator
 
-Installation
+## Description
+This is a Node.js application that takes in user input from inquirer prompts in the command line/terminal to generate a README.md file for user's projects.
+
+## Installation
 The user should clone the repository from GitHub and install Node and this file uses inquirer.
 
-Usage
+## Usage
 In the command line, enter node index and press enter to run the application.
 
 Using the command line, answer questions about the project to create a README.md file. Once all prompts are answered, a README.md file will be created in the './instructions' directory.
@@ -15,7 +16,8 @@ Example video of how this can be used:
 
 
 
-Acceptance Criteria
+## Acceptance Criteria
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
