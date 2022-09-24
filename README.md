@@ -13,6 +13,7 @@ Using the command line, answer questions about the project to create a README.md
 
 Example video of how this can be used: 
 
+[Untitled_ Sep 23, 2022 6_43 PM.webm](https://user-images.githubusercontent.com/101304518/192074894-ee7b2288-f98a-4400-b721-15b0755a2bce.webm)
 
 
 
