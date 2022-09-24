@@ -1,16 +1,16 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 const generatePage = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = () => {
-    return inquirer.createPromptModule([
+    return inquirer.prompt([
         {
             type: 'input',
             message:'Title of your project:',
-            name:'project_name',
+            name:'title',
         },
         {
             type: 'input',
@@ -20,7 +20,7 @@ const questions = () => {
         {
             type: 'input',
             message: 'Table of Contents',
-            name: 'table of contents',
+            name: 'table_of_contents',
         },
         {
             type: 'list',
@@ -54,8 +54,20 @@ const questions = () => {
         {
             type: "input",
             message:
+                "What tests are being run?",
+            name: "test_instructions",
+        },
+        {
+            type: "input",
+            message:
                 'What does the user need to know about contributing to the repo? If you do not allow contributions, type "N/A":',
             name: "contributing",
+        },
+        {
+            type: "input",
+            message:
+                "What is your github username?:",
+            name: "gitusername",
         },
         {
             type: "input",
@@ -63,6 +75,7 @@ const questions = () => {
                 "What is the URL to your Github account?:",
             name: "github_url",
         },
+        
         {
             type: "input",
             message:
@@ -104,9 +117,3 @@ questions()
     .then(data => {
         return writeFile(data);
     });
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
